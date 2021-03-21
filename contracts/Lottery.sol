@@ -258,7 +258,7 @@ contract Lottery is Ownable, Initializable, Testable {
     function updateSizeOfLottery(uint8 _newSize) external onlyOwner() {
         require(
             sizeOfLottery_ != _newSize,
-            "Cannot set to current size"
+            "Cannot set to new size"
         );
         require(
             sizeOfLottery_ != 0,
